@@ -4,7 +4,7 @@ In this tutorial I'll walk you through the steps to create a simple but fun app 
 
 # Set up
 
-These instructions are for Python3. Some steps may be different (like the part on virtual environments).
+These instructions are for Python3. Some steps may be different for versions earlier than 3.4 but the idea is the same.
 
 1.  Check if you have python3 installed. Open a terminal and run:
 
