@@ -28,7 +28,7 @@ These instructions are for Python3. Some steps may be different for versions ear
     If this didn't work, you may not have python3 installed. Visit: https://www.python.org/downloads/ and follow the installation instructions for the latest version. I use [Anaconda](https://www.anaconda.com/).
 
 
-2. Now, let's create a `virtual environment`. Using virtual environments for your projects is not necessary, but it's good practice and it will keep your projects working despite future upgrades that may bring conflicts. (For python with version earlier than 3.4 the instructions will be different, you can find instructions in google or stackoverflow.)
+2. Now, let's create a `virtual environment`. Using virtual environments is not mandatory, but it's good practice. It will keep your projects working despite future upgrades that may bring conflicts. (Note: For python with version earlier than 3.4 the instructions will be different, you can find instructions in google or stackoverflow.)
 
     1. *Tip*: create the virtual environemnt in the root project folder to keep things tidy. Let's first create a project folder:
 
@@ -37,18 +37,18 @@ These instructions are for Python3. Some steps may be different for versions ear
         $ cd my_twilio_flask_app
         ```
 
-    2. Create the virtual environment with a name of your choice, I put `twilio_app_env`:
+    2. Create the virtual environment with a name of your choice, I put `twilio_app_venv`:
 
         ```
         $ python3 -m venv twilio_app_venv
         ```
-        You'll find `twilio_app_venv` in your project folder. Activate  the virtual environment:
+        You'll find a `twilio_app_venv` folder within your project folder. Now activate the virtual environment:
 
         ```
         $ source twilio_app_venv/bin/activate
         ```
 
-        You should see the terminal prompt a bit different. Now it should display the virtual environment that you are using currenlty, as in:
+        If this worked, you'll see the terminal prompt a bit different: now it should display the virtual environment as in:
 
         ```
         (twilio_app_venv) Macbook:my_twilio_flask_app yourusername$ _
@@ -57,7 +57,7 @@ These instructions are for Python3. Some steps may be different for versions ear
 
 4. Check if you have `flask` installed:
 
-    To make sure `flask` is intalled, run `import flask` in your python console:
+    Run `import flask` in your python console:
 
     ```
     $ python3
@@ -158,9 +158,9 @@ Explore [Twilio's Docs](https://www.twilio.com/docs/):
 I used these two APIs, you are encouraged to explore and use others to match your app design! 
 
 
-For cat pictures: https://thecatapi.com/
+For cat pictures (I used a GET HTTP request): https://thecatapi.com/
 
-For quotes:  https://favqs.com/api 
+For quotes (I used a POST HTTP request):  http://forismatic.com/en/api/
 
 
 # Twiml
