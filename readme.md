@@ -104,7 +104,7 @@ These instructions are for Python3. Some steps may be different for versions ear
 You can now use the python script in the repo and run it!
 
 ```
-$ python3 FILE.py
+$ python3 sms_mms_app.py
 ```
 
 ## Set up a public URL and configure your Twilio number
