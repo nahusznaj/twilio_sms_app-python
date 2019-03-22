@@ -18,7 +18,7 @@ def incoming_sms():
     # with twilio, read the body of the incoming message in the body variable 
     body = request.values.get('Body', None) 
 
-    if body == 'Yes' or body == 'yEs' or body == 'yeS' or body == 'yes' or body == 'YES':
+    if body in ['Yes', 'Yes ', 'yEs', 'yEs ', 'yeS', 'yeS ', 'yes', 'yes ', 'YES',  'YES ']:
         msg = resp.message(quote)
         return str(resp)
     elif body == "No" or body == "NO" or body == "nO":
