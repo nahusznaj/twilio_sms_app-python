@@ -21,7 +21,7 @@ def incoming_sms():
     if body == 'Yes' or body == 'yEs' or body == 'yeS' or body == 'yes' or body == 'YES':
         msg = resp.message(quote)
         return str(resp)
-    elif body == "No" or body == 'NO' or body == 'nO':
+    elif body == "No" or body == "NO" or body == "nO":
         resp.message("Oh... you said No!")
         return str(resp)
     else: 
