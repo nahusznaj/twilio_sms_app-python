@@ -104,7 +104,7 @@ These instructions are for Python3. Some steps may be different for versions ear
 You can now use the python script in the repo and run it!
 
 ```
-$ python3 sms_mms_app.py
+$ python3 sms_app.py
 ```
 
 ## Set up a public URL and configure your Twilio number
@@ -132,10 +132,29 @@ For instance, if you run the app and it's listening on port 5000:
  You'll find the ngrok debugger and the `Forwarding` URL, something like `http://[something].ngrok.io` will be publicly accessible. Then, the webhook for "a message comes in" in your Twilio number will be the URL `http://[something].ngrok.io/sms`.  Note that the `/sms` route was set by us in the `.py` app file!
 
 
+# More resources
 
+## Flask
+
+Great [blog](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) "The Flask Mega-Tutorial Part I: Hello, World!" by Miguel Grinberg.
+
+Flask community website: http://flask.pocoo.org/ 
+
+
+
+## Requests
+
+http://docs.python-requests.org/en/master/
+
+## The APIs
+
+For quotes (I used a POST HTTP request):  http://forismatic.com/en/api/
 
 
 ## More info about Twilio:
+
+## Want to learn more Twilio? Get a free T-shirt by playing the awesome [TwilioQuest](https://www.twilio.com/quest/welcome)!
+
 
 [Twilio's Youtube channel](https://www.youtube.com/channel/UCWh3G9LZmZ3q_xWOyPpn8ag)
 
@@ -151,19 +170,9 @@ Explore [Twilio's Docs](https://www.twilio.com/docs/):
 
 [Configuring Phone Numbers to Receive and Respond to SMS and MMS Messages](https://support.twilio.com/hc/en-us/articles/223136047-Configuring-Phone-Numbers-to-Receive-SMS-Messages)
 
-## Want to learn more Twilio? Get a free T-shirt by playing the awesome [TwilioQuest](https://www.twilio.com/quest/welcome)!
-
-# The APIs
-
-I used these two APIs, you are encouraged to explore and use others to match your app design! 
 
 
-For cat pictures (I used a GET HTTP request): https://thecatapi.com/
-
-For quotes (I used a POST HTTP request):  http://forismatic.com/en/api/
-
-
-# Twiml
+## Twiml
 
 Twiml is Twilio's XML language that tells Twilio what to do when you receive an incoming SMS.
 
