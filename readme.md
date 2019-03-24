@@ -1,6 +1,6 @@
 # Create a Twilio SMS app with Flask
 
-In this tutorial I'll walk you through the steps to create a simple but fun app with Twilio that sends quotes and cat photos by SMS/MMS. 
+In this tutorial I'll walk you through the steps to create a simple but fun app with Twilio that sends SMS with meaningful quotes.  
 
 # Set up
 
