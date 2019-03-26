@@ -42,6 +42,7 @@ These instructions are for Python3. Some steps may be different for versions ear
         ```
         $ python3 -m venv twilio_app_venv
         ```
+        
         You'll find a `twilio_app_venv` folder within your project folder. Now activate the virtual environment:
 
         ```
