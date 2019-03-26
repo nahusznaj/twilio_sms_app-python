@@ -25,10 +25,10 @@ These instructions are for Python3. Some steps may be different for versions ear
 
     Exit python by running `exit()`.
 
-    If this didn't work, you may not have python3 installed. Visit: https://www.python.org/downloads/ and follow the installation instructions for the latest version. I use [Anaconda](https://www.anaconda.com/).
+    If this didn't work, you may not have python3 installed. Visit: https://www.python.org/downloads/ and follow the installation instructions for the latest version. 
 
 
-2. Now, let's create a `virtual environment`. Using virtual environments is not mandatory, but it's good practice. It will keep your projects working despite future upgrades that may bring conflicts. (Note: For python with version earlier than 3.4 the instructions will be different, you can find instructions in google or stackoverflow.)
+2. Now, let's create a `virtual environment`. Using virtual environments is not mandatory, but it's good practice. It will keep your projects working despite future upgrades that may bring conflicts. (Note: For python with version earlier than 3.4 the instructions will be different, you can search in google or stackoverflow.)
 
     1. *Tip*: create the virtual environemnt in the root project folder to keep things tidy. Let's first create a project folder:
 
@@ -89,7 +89,7 @@ These instructions are for Python3. Some steps may be different for versions ear
 
     Get a Twilio account [here.](https://www.twilio.com/try-twilio)
 
-    Buy a phone number (I would use a US mobile number, since Ireland numbers do not include all the functionalities that we need :( ).
+    Buy a phone number with SMS capabilities.
 
     Once that's done, you can run the app, expose it with a webhook tunnel like ngrok, and add the url to the webhook for when "a message comes in" in your Twilio phone number configuration.
     
@@ -183,5 +183,5 @@ When your Twilio number receives an incoming SMS, it will make a synchronous HTT
 The POST request that Twilio sends to your app includes a number of parameters (if you configured a GET request, this will change accordingly), including the "From" and "To" numbers, the "Body" of the message. For a full list visit this [page](https://www.twilio.com/docs/sms/twiml#request-parameters).
 
 
-### More on [Twiml.](https://www.twilio.com/docs/sms/twiml#what-is-twiml)
+More on [Twiml.](https://www.twilio.com/docs/sms/twiml#what-is-twiml)
 
