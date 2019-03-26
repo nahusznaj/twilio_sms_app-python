@@ -79,7 +79,7 @@ These instructions are for Python3. Some steps may be different for versions ear
 
 5. Install [Twilio's Software Development Kit (SDK)](https://www.twilio.com/docs/libraries/python#install-the-library):
 
-    When a message comes in to the Twilio number, Twilio will make a POST request to our app's URL specified by us in the configuration to that Twilio's phone number. In order to respond to that POST request appropiately, we will use Twilio's helper library. Basically, our app will need to access some information from the incoming message (such as the body of the SMS), and depending on what the incoming messsage says, `return` with a response by generating Twiml (more on this below). So, let's install Twilio's SDK:
+When a message comes in to the Twilio number, Twilio will make a POST request to our app, specified by us in the configuration to our Twilio phone number. In order to respond to that POST request appropiately, we will use Twilio's helper library (see the Twiml section below). 
 
     ```
     $ pip3 install twilio
