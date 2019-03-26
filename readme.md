@@ -82,9 +82,8 @@ These instructions are for Python3. Some steps may be different for versions ear
 
 When a message comes in to the Twilio number, Twilio will make a POST request to our app, specified by us in the configuration to our Twilio phone number. In order to respond to that POST request appropiately, we will use Twilio's helper library (see the Twiml section below). 
 
-    ```
     $ pip3 install twilio
-    ```
+    
 
 6. To close the circle, we need a Twilio phone number, which you can buy with credit with you sign up to Twilio.
 
