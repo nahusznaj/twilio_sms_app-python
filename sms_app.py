@@ -9,16 +9,15 @@ app = Flask(__name__)
 @app.route("/sms", methods=['GET', 'POST'])
 def incoming_sms():
     resp = MessagingResponse() #set up the twiml response
-
-    ## quote API request with Requests. I used a POST, this is explained in their website: http://forismatic.com/en/api/
-    r = requests.post('http://api.forismatic.com/api/1.0/', data = {'method':'getQuote', 'key':'457653', 'format':'json', 'lang':'en'})
-    quote_response = json.loads(r.text)
-    quote = quote_response['quoteText'] + ' ' + quote_response['quoteAuthor']
-    
+  
     # with twilio, read the body of the incoming message in the body variable 
     body = request.values.get('Body', None) 
 
     if body.strip().lower() == 'yes':
+        ## make a resquest to quote API with Requests. See: http://forismatic.com/en/api/
+        r = requests.post('http://api.forismatic.com/api/1.0/', data = {'method':'getQuote', 'key':'457653', 'format':'json', 'lang':'en'})
+        quote_response = json.loads(r.text)
+        quote = quote_response['quoteText'] + ' ' + quote_response['quoteAuthor']
         msg = resp.message(quote)
         return str(resp)
     elif body.strip().lower() == 'no':
